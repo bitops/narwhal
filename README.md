@@ -4,6 +4,21 @@ narwhal
 An example Sinatra application that uses Unicorn to spawn a resque
 worker process on startup.
 
+Install
+=======
+
+You'll need redis first:
+
+```shell
+brew install redis
+```
+
+And all the gems:
+
+```shell
+bundle install
+```
+
 Usage
 =====
 

@@ -3,10 +3,17 @@ require 'resque'
 require 'redis'
 require './increment_count'
 
-Resque.redis = Redis.new
+# connect to Redis
+r = Redis.new
+
+# initialize count
+r.set('narwhal_count', 0)
+
+# make sure Resque knows what to do
+Resque.redis = r
 
 get '/' do
-  "App is alive, counter is #{Redis.new.get('narwhal_count')}"
+  "App is alive, counter is #{r.get('narwhal_count')}"
 end
 
 get '/up' do

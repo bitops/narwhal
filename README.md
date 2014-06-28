@@ -9,10 +9,18 @@ Usage
 
 Start the app with:
 
-```unicorn -p 4567 -c unicorn_config.rb```
+```shell
+unicorn -p 4567 -c unicorn_config.rb
+```
 
 See the count with: 
-```open http://localhost:4567/```
+```shell
+open http://localhost:4567/
+```
 
-Increment the count by hitting: ```http://localhost:4567/up```
+Increment the count by hitting:
+
+```shell
+http://localhost:4567/up
+```
 

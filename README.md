@@ -7,13 +7,13 @@ worker process on startup.
 Usage
 =====
 
-Start the app with:
+Start the app:
 
 ```shell
 unicorn -p 4567 -c unicorn_config.rb
 ```
 
-See the count with: 
+See the count: 
 ```shell
 open http://localhost:4567/
 ```

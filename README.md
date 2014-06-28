@@ -2,7 +2,8 @@ narwhal
 =======
 
 An example Sinatra application that uses Unicorn to spawn a resque
-worker process on startup.
+worker process on startup. An example resque-scheduler implementation
+is also included.
 
 Install
 =======

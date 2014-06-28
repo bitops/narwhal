@@ -1,2 +1,2 @@
 require "resque/tasks"
-require "./foo_updater"
+require "./increment_count"
